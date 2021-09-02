@@ -80,7 +80,7 @@ class ticket_object : public abstract_object<ticket_object>
       // Configurations
       static constexpr uint32_t lock_forever_update_steps = 4;
       static constexpr uint32_t seconds_per_lock_forever_update_step = 180 * 86400;
-      static constexpr uint32_t seconds_per_charging_step = 15 * 86400;
+      static constexpr uint32_t seconds_per_charging_step = 600; ///15 * 86400;
       static constexpr uint32_t seconds_to_cancel_charging = 7 * 86400;
       static uint32_t seconds_to_downgrade( ticket_type i ) {
          static constexpr uint32_t _seconds_to_downgrade[] = { 180 * 86400, 180 * 86400, 360 * 86400 };
